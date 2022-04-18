@@ -79,13 +79,13 @@ Perancangan model dengan tiga algoritma yaitu:
     **Pengolahan Data**
    - Mengidentifikasi Missing Value dan Outlier
     <br>
-    <image src='https://raw.githubusercontent.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/data-gambar/Missing%20Value.PNG' width= 500/>
-    <br>
+    <image src='https://raw.githubusercontent.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/data-gambar/Missing%20Value.PNG' width= 500/> <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/Outliers.png?raw=true' width= 500/> 
+    <br> 
      Setelah dilakukan pengecekan terdapat 8 _missing value_ pada dataset yaitu pada kolom volume, untuk menangani hal tersebut cukup dengan menghapus data yang nilainya 0. Selanjutnya cukup banyak _outliers_ pada dataset, dan untuk mengatasi ini penulis menggunakan metode InterQuartile Range (IQR) untuk menghapus semua outliers pada data.
     
   - Univariate Analysis
     <br>
-    <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/Histogram%20Univariate.png?raw=true' width = 500/>
+    <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/Histogram%20Univariate.png?raw=true' width = 1000/>
     <br>
     Peningkatan harga sebanding dengan penurunan jumlah sampel. Hal ini dapat kita lihat jelas dari hampir semua histogram yang grafiknya mengalami penurunan seiring dengan semakin banyaknya jumlah sampel (sumbu x).
     Terlihat pada grafik bahwa hampir semua data cenderung distribusi nilainya miring ke kanan (right-skewed). Hal ini akan berimplikasi pada model nantinya.
