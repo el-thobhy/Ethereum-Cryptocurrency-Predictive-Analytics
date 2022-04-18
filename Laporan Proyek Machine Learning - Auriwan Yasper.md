@@ -78,8 +78,8 @@ Perancangan model dengan tiga algoritma yaitu:
 
     **Pengolahan Data**
    - Mengidentifikasi Missing Value dan Outlier
-_gambar missing value_
-     Cukup banyak _outliers_ pada dataset, dan untuk mengatasi ini penulis menggunakan metode InterQuartile Range (IQR) untuk menghapus semua outliers pada data.
+<image src='https://raw.githubusercontent.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/data-gambar/Missing%20Value.PNG' width= 500/>
+     Setelah dilakukan pengecekan terdapat 8 _missing value_ pada dataset yaitu pada kolom volume, untuk menangani hal tersebut cukup dengan menghapus data yang nilainya 0. Selanjutnya cukup banyak _outliers_ pada dataset, dan untuk mengatasi ini penulis menggunakan metode InterQuartile Range (IQR) untuk menghapus semua outliers pada data.
     
   - Univariate Analysis
   _Gambar univariate analysis_
