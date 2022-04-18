@@ -197,9 +197,9 @@ Metrik yang akan penulis gunakan pada proyek ini adalah MSE atau Mean Squared Er
     <br>
 
 keterangan:
-N = jumlah dataset
-yi = nilai sebenarnya
-yi^ = nilai prediksi
+N = jumlah dataset,
+yi = nilai sebenarnya,
+yi^ = nilai prediksi,
 
 Penulis juga melakukan evaluasi dengan menggunakan metrik akurasi, yaitu tingkat keakuran data prediksi yang didasarkan dari data latih pada model. Metrik Akurasi mungkin metrik paling awam/paling diketahui pada pemodelan klasifikasi. Metrik ini adalah persentase jumlah data yang diprediksi secara benar terhadap jumlah keseluruhan data. Jika ditinjau dengan confusion matrix, akurasi adalah rasio dari jumlah elemen diagonal terhadap jumlah seluruh elemen matriks, atau:
 
