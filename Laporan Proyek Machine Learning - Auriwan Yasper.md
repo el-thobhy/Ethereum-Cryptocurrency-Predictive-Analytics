@@ -192,7 +192,9 @@ Sebagaimana yang penulis sebutkan diatas model _machine learning_ yang akan dira
 ## Evaluation
 Metrik yang akan penulis gunakan pada proyek ini adalah MSE atau Mean Squared Error yang menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi. Karena penulis baru melakukan scaling pada data latih untuk menghindari kebocoran data, maka sebelum menghitung nilai mse, penulis perlu melakukan scaling fitur terlebih dahulu pada data uji. Setelah melakukan scaling data uji barulah MSE dihitung. Secara matematis dihitung dengan persamaan berikut:
 
-_gambar rumus mse_
+<br>
+    <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/gambar%20rumus%20msa.png?raw=true' width = 1000/>
+    <br>
 
 keterangan:
 N = jumlah dataset
@@ -201,7 +203,10 @@ yi^ = nilai prediksi
 
 Penulis juga melakukan evaluasi dengan menggunakan metrik akurasi, yaitu tingkat keakuran data prediksi yang didasarkan dari data latih pada model. Metrik Akurasi mungkin metrik paling awam/paling diketahui pada pemodelan klasifikasi. Metrik ini adalah persentase jumlah data yang diprediksi secara benar terhadap jumlah keseluruhan data. Jika ditinjau dengan confusion matrix, akurasi adalah rasio dari jumlah elemen diagonal terhadap jumlah seluruh elemen matriks, atau:
 
-_gambar Rumus metrik akurasi_
+<br>
+    <image src='https://miro.medium.com/max/736/1*Y1WWhTFtl3cHLjTHmvnvWA.png' width = 1000/>
+    <br>
+
 
 Berdasarkan metrik akurasi penulis mendapati bahwa model dengan akurasi tertinggi adalah _Random Forest_, yaitu 84.7%. Sama halnya dengan metrik akurasi, MSE juga menunjukkan bahwa model _Random Forest_ memberikan error yang paling kecil. Sedangkan _boosting_ memiliki error paling besar. Jadi model yang akan penulis gunakan dalam memprediksi harga satu bulan selanjutnya adalah model _Random Forest_.
 
