@@ -212,6 +212,8 @@ Berdasarkan metrik akurasi penulis mendapati bahwa model dengan akurasi tertingg
 
 Berikut ini bisa kita lihat perbandingan grafik MSE dan akurasi ketiga model
 
-_gambar grafik mse_
+<br>
+    <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/Grafik%20mse.png?raw=true' width = 400/>
+    <br>
 
 Berdasarkan tingkat eror pada grafik di atas, semakin kecil tingkat eror maka semakin baik model tersebut memprediksi data. Jika dibandingkan dengan dua model lainnya, model dengan Error terkecil adalah Model Random Forest.
