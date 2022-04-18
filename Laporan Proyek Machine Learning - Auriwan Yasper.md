@@ -4,7 +4,7 @@
 ## Domain Proyek
 Topik yang dipilih dalam proyek machine learning ini adalah mengenai keuangan dan cryptocurrency dengan judul proyek "Ethereum Price Predictive Analytics".
 
-**Latar Belakang**
+<br>**Latar Belakang**<br>
     _Cryptocurrency_ telah mendapatkan popularitas yang cukup besar dalam beberapa tahun terakhir. Sifat _cryptocurrency_ yang tidak dapat dilacak dan tidak terkendali menarik jutaan orang di seluruh dunia [[1]](https://www.sciencedirect.com/science/article/abs/pii/S0045790618331343). Terlebih lagi dunia telah melihat berbagai kemajuan teknologi, seperti _Internet of Things_ (IoT), _e-commerce_, dan pembayaran digital.
 Saat ini banyak pengguna yang terlibat dalam _cryptocurrency_ seperti _Ethereum_. Dengan peningkatan mendadak dalam setiap detik dan modal yang digunakan dalam transaksi tersebut, ada kebutuhan bagi pengguna untuk dapat memprediksi apakah pengguna akan melakukan transaksi menggunakan _ethereum_ atau tidak. Sehingga dapat mengurangi kerugian akibat rendahnya harga pasar saat melakukan transaksi.
 
