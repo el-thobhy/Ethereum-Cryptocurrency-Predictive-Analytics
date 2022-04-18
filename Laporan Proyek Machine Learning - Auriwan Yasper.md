@@ -152,6 +152,7 @@ Sebagaimana yang penulis sebutkan diatas model _machine learning_ yang akan dira
 **Kelebihan**:
     - Algoritma KNN merupakan algoritma yang sederhana dan Effektif dalam melakukan _data mining_.
     - Dapat di implementasikan pada beberapa kasus seperti klasifikasi, regresi dan pencarian.<br>
+
 **Kekurangan**:
     - Algoritma KNN menjadi lebih lambat secara signifikan seiring meningkatnya jumlah sampel dan/atau variabel independen.
     - Algoritma KNN akan menjadi tidak effisien dan kurang presisi ketika berhadapan dengan data yang memiliki banyak missing value.<br>
