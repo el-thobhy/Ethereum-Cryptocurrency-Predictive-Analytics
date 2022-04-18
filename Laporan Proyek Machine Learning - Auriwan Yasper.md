@@ -78,10 +78,41 @@ Perancangan model dengan tiga algoritma yaitu:
 
     **Pengolahan Data**
    - Mengidentifikasi Missing Value dan Outlier
+        - Missing Value    
     <br>
-    <image src='https://raw.githubusercontent.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/data-gambar/Missing%20Value.PNG' width= 500/> <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/Outliers.png?raw=true' width= 500/> 
+    <image src='https://raw.githubusercontent.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/data-gambar/Missing%20Value.PNG' width= 500/> 
     <br> 
-     Setelah dilakukan pengecekan terdapat 8 _missing value_ pada dataset yaitu pada kolom volume, untuk menangani hal tersebut cukup dengan menghapus data yang nilainya 0. Selanjutnya cukup banyak _outliers_ pada dataset, dan untuk mengatasi ini penulis menggunakan metode InterQuartile Range (IQR) untuk menghapus semua outliers pada data.
+     Setelah dilakukan pengecekan terdapat 8 _missing value_ pada dataset yaitu pada kolom volume, untuk menangani hal tersebut cukup dengan menghapus data yang nilainya 0. 
+        - Outliers
+            - Open
+            <br>
+    <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/Open%20Ouliers.png?raw=true' width= 500/> 
+    <br> 
+            - Close
+        <br>
+    <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/Close%20Outliers.png?raw=true' width= 500/> 
+    <br> 
+            - High
+            <br>
+    <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/High%20Outliers.png?raw=true' width= 500/> 
+    <br> 
+            - Low
+            <br>
+    <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/Low%20Outliers.png?raw=true' width= 500/> 
+    <br> 
+            - Volume
+            <br>
+    <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/Volume%20Outliers.png?raw=true' width= 500/> 
+    <br> 
+            - Price Average
+            <br>
+    <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/Price%20Average.png?raw=true' width= 500/> 
+    <br> 
+            - Next Month Price
+            <br>
+    <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/Next%20mont%20Price.png?raw=true' width= 500/> 
+    <br> 
+        Cukup banyak _outliers_ pada dataset, dan untuk mengatasi ini penulis menggunakan metode InterQuartile Range (IQR) untuk menghapus semua outliers pada data.
     
   - Univariate Analysis
     <br>
