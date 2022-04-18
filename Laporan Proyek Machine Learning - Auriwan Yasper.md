@@ -45,7 +45,7 @@ Perancangan model dengan tiga algoritma yaitu:
   - _Boosting Algorithm_
 
 ## Data Understanding
-- <br>**Informasi Dataset**<br>
+- **Informasi Dataset**<br>
   Dataset yang digunakan berupa data Historis Ethereum dari 2016 sampai 2022, informasi lebih lanjut mengenai dataset tersebut dapat lihat pada tabel berikut:
 
   | Jenis                   | Keterangan                                                                              |
@@ -72,7 +72,7 @@ Perancangan model dengan tiga algoritma yaitu:
     *   High : harga tertinggi perhari
     *   Volume : volume transaksi perhari
 
-- <br>**Pengolahan Fitur dataset**<br>
+- **Pengolahan Fitur dataset**<br>
   sebelum masuk ke tahap pengolahan data, penulis menambahkan dua buah variabel baru yaitu `Price_Average` dan `Next Month Price`.
   Sehingga variabel pada data adalah `Date, High, Low, Open, Close, Volume, Price_Average, Next_Month_Price`.
 
@@ -83,7 +83,7 @@ Perancangan model dengan tiga algoritma yaitu:
     <image src='https://raw.githubusercontent.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/data-gambar/Missing%20Value.PNG' width= 500/> 
     <br> 
      Setelah dilakukan pengecekan terdapat 8 _missing value_ pada dataset yaitu pada kolom volume, untuk menangani hal tersebut cukup dengan menghapus data yang nilainya 0.
-        - <br>Outliers<br>
+        - Outliers<br>
             - Open
             <br>
     <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/Open%20Ouliers.png?raw=true' width= 500/> 
