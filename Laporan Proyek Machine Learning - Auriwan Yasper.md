@@ -83,7 +83,9 @@ Perancangan model dengan tiga algoritma yaitu:
     <image src='https://raw.githubusercontent.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/data-gambar/Missing%20Value.PNG' width= 500/> 
     <br> 
      Setelah dilakukan pengecekan terdapat 8 _missing value_ pada dataset yaitu pada kolom volume, untuk menangani hal tersebut cukup dengan menghapus data yang nilainya 0. 
+
         - Outliers
+        
             - Open
             <br>
     <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/Open%20Ouliers.png?raw=true' width= 500/> 
@@ -122,8 +124,10 @@ Perancangan model dengan tiga algoritma yaitu:
     Terlihat pada grafik bahwa hampir semua data cenderung distribusi nilainya miring ke kanan (right-skewed). Hal ini akan berimplikasi pada model nantinya.
     
   - Multivariate Analysis
-   _gambar mulitvariate analysis_
-    Pada gambar diatas bisa kita lihat bahwa kebanyakan data memiliki korelasai positif yang ditandai dengan meningkatnya variabel pada sumbu y saat terjadi peningkatan variabel pada sumbu x. Selain itu ada juga data yang memiliki sebaran data acak yaitu pada grafik Volume.
+   <br>
+    <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/Matrik%20korelasi.png?raw=true' width = 1000/>
+    <br>
+    Pada gambar diatas bisa kita lihat bahwa kebanyakan data memiliki korelasi positif yang ditandai dengan meningkatnya variabel pada sumbu y saat terjadi peningkatan variabel pada sumbu x. Selain itu ada juga data yang memiliki sebaran data acak yaitu pada grafik Volume.
     
     bisa juga kita lihat pada score korelasinya pada gambar berikut:
     _gambar matrik korelasi_
