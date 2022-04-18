@@ -82,7 +82,7 @@ Perancangan model dengan tiga algoritma yaitu:
     <br>
     <image src='https://raw.githubusercontent.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/data-gambar/Missing%20Value.PNG' width= 500/> 
     <br> 
-     Setelah dilakukan pengecekan terdapat 8 _missing value_ pada dataset yaitu pada kolom volume, untuk menangani hal tersebut cukup dengan menghapus data yang nilainya 0.
+     Setelah dilakukan pengecekan terdapat 8 _missing value_ pada dataset yaitu pada kolom volume, untuk menangani hal tersebut cukup dengan menghapus data yang nilainya 0.<br>
         - Outliers<br>
             - Open
             <br>
@@ -136,18 +136,18 @@ Perancangan model dengan tiga algoritma yaitu:
 ## Data Preparation
 
 Selanjutnya pengolahan data yang dilakukan dengan tahapan sebagai berikut:
-  - **Melakukan Penanganan _Missing Value_ dan _Outliers_**
+  - **Melakukan Penanganan _Missing Value_ dan _Outliers_**<br>
     Setelah dilakukan pengecekan terdapat 8 _missing value_ pada dataset yaitu pada kolom volume, untuk menangani hal tersebut cukup dengan menghapus data yang nilainya 0, sehingga data tidak lagi memiliki nilai nol dan kita bisa cek nilai minimum data bukan nol, sedangkan untuk mengatasi _outliers_ penulis menggunakan _interquartile range_ atau IQR yang memanfaatkan batas bawah dan batas atas data.
 
-  - **Melakukan pembagian dataset**
+  - **Melakukan pembagian dataset**<br>
     Dataset yang kita miliki perlu dilakukan pembagian menjadi data _train_ dan data _test_. data _train_ merupakan data yang digunakan untuk melatih model dan data _test_ adalah data yang belum diketahui oleh model dan data ini akan digunakan untuk menguji model yang kita rancang. Pada proyek kali ini data untuk _train_ sebeasar 80% dan untuk _test_ sebesat 20%.  Pembagian dataset dilakukan dengan modul [train_test_split](https://scikit-learn.org/0.24/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split) dari scikit-learn. Jadi sample yang digunaka untuk melatih model adalah 1316 dan sampel untuk menguji model adalah 330.
     
-  - **Standardisasi data pada semua fitur numerik pada dataset**
+  - **Standardisasi data pada semua fitur numerik pada dataset**<br>
     Proses Standardisasi sangat diperlukan dalam melatih model, karena pada dasarnya model akan lebih mudah memproses data yang seragam dan mendekati distribusi normal. Karena data merupakan fitur numerik maka teknik yang digunakan adalah StandarScaler dari library [Scikitlearn](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html). StandarScaler ini melakukan standarisasi dengan mengurangkan nilai rata-rata kemudian membaginya dengan standar deviasi untuk menggeser distribusi. StandardScaler menghasilkan distribusi dengan standar deviasi sama dengan 1 dan mean sama dengan 0. Sekitar 68% dari nilai akan berada di antara -1 dan 1. Sebagai tahap awal, standarisai dilakukan untuk data latih terlebih dahulu untuk menghindari kebocoran data, sedangkan untuk data uji akan dilakukan standardisasi pada tahap evaluasi.
 
 ## Modeling
-Sebagaimana yang penulis sebutkan diatas model _machine learning_ yang akan dirancang akan menggunakan 3 algoritma yaitu _K-Nearest Neighbors_, _Random Forest_, _Boosting Algorithm_. Ketiga algoritma ini akan kita evaluasi dan mencari algoritma dengan akurasi terbaik.
-    - **K-Nearest Neighbors**
+Sebagaimana yang penulis sebutkan diatas model _machine learning_ yang akan dirancang akan menggunakan 3 algoritma yaitu _K-Nearest Neighbors_, _Random Forest_, _Boosting Algorithm_. Ketiga algoritma ini akan kita evaluasi dan mencari algoritma dengan akurasi terbaik.<br>
+    - **K-Nearest Neighbors**<br>
     Algoritma KNN adalah algoritma yang memiliki karakteristik sederhana akan tetapi efective dalam melakukan _data mining_. Kelemahan utama dari teknik ini adalah ketika sejumlah data yang memiliki _noise_ dan tidak lengkap terlibat dalam model, maka akan mengakibatkan algoritma KNN menjadi tidak efficient dan tidak presisi [[4]](https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/widm.1289). KNN beroperasi dengan menggunakan kesamaan fitur untuk memprediksi nilai dari setiap data baru. Dengan kata lain, setiap data baru diberi nilai berdasarkan seberapa mirip titik tersebut dalam set pelatihan. Pembuatan model dilakukan menggunakan modul [KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html) dari library scikitlearn. K yang digunakan adalah 10 dan metric Euclidean untuk mengukur jarak antara titik. Pada model ini akan membandingkan jarak satu sampel data ke 10 sampel data tetangganya yang terdekat, agar hasil persamaan regresi yang dihasilkannya nantinya akan lebih halus, tahapan itu akan dilakukan berulang-ulang hingga mendapatkan hasil persamaan regresi dengan nilai yang maksimal. Kemudian proses selanjutnya melakukan prediksi menggunakan data uji dan melakukan pengujian. Pada tahap ini kita hanya melatih data training dan menyimpan data testing untuk tahap evaluasi.
 
 - **Kelebihan**:
@@ -155,9 +155,9 @@ Sebagaimana yang penulis sebutkan diatas model _machine learning_ yang akan dira
     - Dapat di implementasikan pada beberapa kasus seperti klasifikasi, regresi dan pencarian.
 - **Kekurangan**:
     - Algoritma KNN menjadi lebih lambat secara signifikan seiring meningkatnya jumlah sampel dan/atau variabel independen.
-    - Algoritma KNN akan menjadi tidak effisien dan kurang presisi ketika berhadapan dengan data yang memiliki banyak missing value.
+    - Algoritma KNN akan menjadi tidak effisien dan kurang presisi ketika berhadapan dengan data yang memiliki banyak missing value.<br>
 
-- **Random Forest**
+- **Random Forest**<br>
   Random Forest disusun dari banyak algoritma decision tree yang pembagian data dan fiturnya dipilih secara acak. Random Forest pada dasarnya adalah versi bagging dari algoritma decision tree. Pembuatan model dilakukan dengan menggunakan modul [RandomForestClassifier](https://scikitlearn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) dari library Scikitlearn. Ada beberapa parameter yang digunakan untuk memaksimalkan hasil dari pelatihan model sebagai berikut: 
    - Parameter pertama adalah `n_estimator` yaitu jumlah _trees_ (pohon) di _forest_. Pada proyek ini penulis memilih pohon sebanyak 50 _trees_. 
    - Parameter selanjutnya adalah `max_depth` yang merupakan kedalaman atau panjang pohon. Ini merupakan ukuran seberapa banyak pohon dapat membelah (_splitting_) untuk membagi setiap _node_ ke dalam jumlah pengamatan yang di inginkan, pada proyek ini penulis melakukan set nilai `max_depth` sebesar 16 _split_. 
@@ -172,9 +172,9 @@ Sebagaimana yang penulis sebutkan diatas model _machine learning_ yang akan dira
 
    **Kekurangan** :
    - Algoritma Random Forest overfiting untuk beberapa kumpulan data dengan tugas klasifikasi/regresi yang _bising/noise_.
-    - Untuk data yang menyertakan variabel kategorik dengan jumlah level yang berbeda, Random Forest menjadi bias dalam mendukung atribut dengan level yang lebih banyak. Oleh karena itu, skor kepentingan variabel dari Random Forest tidak dapat diandalkan untuk jenis data ini.
+    - Untuk data yang menyertakan variabel kategorik dengan jumlah level yang berbeda, Random Forest menjadi bias dalam mendukung atribut dengan level yang lebih banyak. Oleh karena itu, skor kepentingan variabel dari Random Forest tidak dapat diandalkan untuk jenis data ini.<br>
 
-- **Boosting Algorithm**
+- **Boosting Algorithm**<br>
   Algoritma ini bekerja dengan membangun model dari data latih. Kemudian ia membuat model kedua yang bertugas memperbaiki kesalahan dari model pertama. Model ditambahkan sampai data latih terprediksi dengan baik atau telah mencapai jumlah maksimum model untuk ditambahkan. Pada tahap ini pembuatan model dilakukan dengan menggunakan modul [Boosting Alghoritm](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html) dari library Scikitlearn. Pada proyek ini, penulis akan menggunakan metode adaptive boosting. Salah satu metode adaptive boosting yang terkenal adalah AdaBoost. Ada beberapa prameter yang digunakan dalam AdaBoosting yaitu:
     - learning_rate: bobot yang diterapkan pada setiap regressor di masing-masing proses iterasi boosting.
     - random_state: digunakan untuk mengontrol random number generator yang digunakan. 
