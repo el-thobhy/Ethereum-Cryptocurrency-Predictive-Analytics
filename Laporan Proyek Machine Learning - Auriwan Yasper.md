@@ -193,7 +193,7 @@ Sebagaimana yang penulis sebutkan diatas model _machine learning_ yang akan dira
 Metrik yang akan penulis gunakan pada proyek ini adalah MSE atau Mean Squared Error yang menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi. Karena penulis baru melakukan scaling pada data latih untuk menghindari kebocoran data, maka sebelum menghitung nilai mse, penulis perlu melakukan scaling fitur terlebih dahulu pada data uji. Setelah melakukan scaling data uji barulah MSE dihitung. Secara matematis dihitung dengan persamaan berikut:
 
 <br>
-    <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/gambar%20rumus%20msa.png?raw=true' width = 400/>
+    <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/gambar%20rumus%20msa.png?raw=true' width = 200/>
     <br>
 
 keterangan:
