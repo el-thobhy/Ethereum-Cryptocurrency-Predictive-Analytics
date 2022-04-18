@@ -82,10 +82,9 @@ Perancangan model dengan tiga algoritma yaitu:
     <br>
     <image src='https://raw.githubusercontent.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/data-gambar/Missing%20Value.PNG' width= 500/> 
     <br> 
-     Setelah dilakukan pengecekan terdapat 8 _missing value_ pada dataset yaitu pada kolom volume, untuk menangani hal tersebut cukup dengan menghapus data yang nilainya 0. 
+     Setelah dilakukan pengecekan terdapat 8 _missing value_ pada dataset yaitu pada kolom volume, untuk menangani hal tersebut cukup dengan menghapus data yang nilainya 0.
 
         - Outliers
-        
             - Open
             <br>
     <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/Open%20Ouliers.png?raw=true' width= 500/> 
@@ -125,12 +124,14 @@ Perancangan model dengan tiga algoritma yaitu:
     
   - Multivariate Analysis
    <br>
-    <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/Matrik%20korelasi.png?raw=true' width = 1000/>
+    <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/Pairplot%20Multivarate.png?raw=true' width = 1000/>
     <br>
     Pada gambar diatas bisa kita lihat bahwa kebanyakan data memiliki korelasi positif yang ditandai dengan meningkatnya variabel pada sumbu y saat terjadi peningkatan variabel pada sumbu x. Selain itu ada juga data yang memiliki sebaran data acak yaitu pada grafik Volume.
     
     bisa juga kita lihat pada score korelasinya pada gambar berikut:
-    _gambar matrik korelasi_
+    <br>
+    <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/Matrik%20korelasi.png?raw=true' width = 1000/>
+    <br>
     Terlihat pada matriks korelasi di atas dapat disimpulkan bahwa kebanyakan variabel memiliki keterikatan dan korelasi yang cukup kuat antar variabel lainnya, dimana nilai korelasi antar variabel bernilai lebih dari 0.8 atau mendekati 1. Sedangkan Volume memiliki korelasi yang lemah yaitu -0.05 dan korelasinya negatif.
 
 ## Data Preparation
