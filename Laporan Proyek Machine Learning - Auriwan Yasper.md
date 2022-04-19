@@ -21,7 +21,7 @@ Pada Proyek ini akan digunakan tiga algoritma yaitu _K-Nearest Neighbors_, _Rand
 ### Problem Statements
 Berdasarkan pada latar belakang di atas, permasalahan yang dapat diselesaikan pada proyek ini adalah sebagai berikut:
 
-- Bagaimana melakukan pengolahan dataset agar dapat memepoleh data yang baik untuk model _machine Learning_?
+- Bagaimana melakukan pengolahan dataset agar dapat memperoleh data yang baik untuk model _machine Learning_?
 - Bagaimana Membangun model _machine learning_ untuk memprediksi harga satu bulan selanjutnya?
 
 ### Goals
@@ -140,7 +140,7 @@ Selanjutnya pengolahan data yang dilakukan dengan tahapan sebagai berikut:
     Setelah dilakukan pengecekan terdapat 8 _missing value_ pada dataset yaitu pada kolom volume, untuk menangani hal tersebut cukup dengan menghapus data yang nilainya 0, sehingga data tidak lagi memiliki nilai nol dan kita bisa cek nilai minimum data bukan nol, sedangkan untuk mengatasi _outliers_ penulis menggunakan _interquartile range_ atau IQR yang memanfaatkan batas bawah dan batas atas data.
 
   - **Melakukan pembagian dataset**<br>
-    Dataset yang kita miliki perlu dilakukan pembagian menjadi data _train_ dan data _test_. data _train_ merupakan data yang digunakan untuk melatih model dan data _test_ adalah data yang belum diketahui oleh model dan data ini akan digunakan untuk menguji model yang kita rancang. Pada proyek kali ini data untuk _train_ sebeasar 80% dan untuk _test_ sebesat 20%.  Pembagian dataset dilakukan dengan modul [train_test_split](https://scikit-learn.org/0.24/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split) dari scikit-learn. Jadi sample yang digunaka untuk melatih model adalah 1316 dan sampel untuk menguji model adalah 330.
+    Dataset yang kita miliki perlu dilakukan pembagian menjadi data _train_ dan data _test_. data _train_ merupakan data yang digunakan untuk melatih model dan data _test_ adalah data yang belum diketahui oleh model dan data ini akan digunakan untuk menguji model yang kita rancang. Pada proyek kali ini data untuk _train_ sebeasar 80% dan untuk _test_ sebesat 20%.  Pembagian dataset dilakukan dengan modul [train_test_split](https://scikit-learn.org/0.24/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split) dari scikit-learn. Jadi sample yang digunakan untuk melatih model adalah 1316 dan sampel untuk menguji model adalah 330.
     
   - **Standardisasi data pada semua fitur numerik pada dataset**<br>
     Proses Standardisasi sangat diperlukan dalam melatih model, karena pada dasarnya model akan lebih mudah memproses data yang seragam dan mendekati distribusi normal. Karena data merupakan fitur numerik maka teknik yang digunakan adalah StandarScaler dari library [Scikitlearn](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html). StandarScaler ini melakukan standarisasi dengan mengurangkan nilai rata-rata kemudian membaginya dengan standar deviasi untuk menggeser distribusi. StandardScaler menghasilkan distribusi dengan standar deviasi sama dengan 1 dan mean sama dengan 0. Sekitar 68% dari nilai akan berada di antara -1 dan 1. Sebagai tahap awal, standarisai dilakukan untuk data latih terlebih dahulu untuk menghindari kebocoran data, sedangkan untuk data uji akan dilakukan standardisasi pada tahap evaluasi.
@@ -172,7 +172,7 @@ Sebagaimana yang penulis sebutkan diatas model _machine learning_ yang akan dira
     - metode yang efektif untuk mengestimasi missing data.
 
    **Kekurangan** :
-   - Algoritma Random Forest overfiting untuk beberapa kumpulan data dengan tugas klasifikasi/regresi yang _bising/noise_.
+   - Algoritma Random Forest overfiting untuk beberapa kumpulan data dengan tugas klasifikasi/regresi yang memiliki _noise_.
     - Untuk data yang menyertakan variabel kategorik dengan jumlah level yang berbeda, Random Forest menjadi bias dalam mendukung atribut dengan level yang lebih banyak. Oleh karena itu, skor kepentingan variabel dari Random Forest tidak dapat diandalkan untuk jenis data ini.<br>
 
 - **Boosting Algorithm**<br>
